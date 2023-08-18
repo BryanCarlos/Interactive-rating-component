@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main id="container">
+    <div class="state-start">
+      <i class="fa-solid fa-star"></i>
+      <!-- Rating state start -->
+
+      <div id="text-content">
+        <h2>
+          How did we do?
+        </h2>
+
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+        </p>
+      </div>
+
+      <div id="ratting-buttons">
+        <div class="button">
+          <input type="radio" name="value" id="num1" class="radioBtn" checked>
+          <label for="num1">1</label>
+        </div>
+
+        <div class="button">
+          <input type="radio" name="value" id="num2" class="radioBtn">
+          <label for="num2">2</label> 
+        </div>
+
+        <div class="button">
+          <input type="radio" name="value" id="num3" class="radioBtn">
+          <label for="num3">3</label> 
+        </div>
+
+        <div class="button">
+          <input type="radio" name="value" id="num4" class="radioBtn"> 
+          <label for="num4">4</label>
+        </div>
+
+        <div class="button">
+          <input type="radio" name="value" id="num5" class="radioBtn"> 
+          <label for="num5">5</label>
+        </div>
+      </div>
+
+      <button id="submit">Submit</button>
+      <!-- Rating state end -->
+    </div>
+
+    <div class="state-end hide">
+      <!-- Thank you state start -->
+      <img src="./images/illustration-thank-you.svg" alt="Thank you image">
+
+      <div class="text-content-end">
+        <div id="sel-result">
+          <span>
+            You selected <span id="sel-value">1</span> out of 5
+          </span>
+        </div>
+        
+        <div id="thank-box">
+          <h2>
+            Thank you!
+          </h2>
+  
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+      <!-- Thank you state end -->
+    </div>  
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
